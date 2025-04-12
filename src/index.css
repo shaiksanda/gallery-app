@@ -1,0 +1,59 @@
+body{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+*{
+    overflow: hidden;
+}
+.galary-app{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    background-color: white;
+}
+
+.image{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.5s ease;
+}
+
+.image:hover{
+    transform: scale(1.04);
+}
+
+
+@media screen and (min-width:768px){
+    .image{
+        width:40%;
+        height: 60%;
+    
+    }
+}
+.icons{
+    display: flex;
+    align-items: center;
+    gap:10px;
+}
+
+.icon{
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.nature-heading{
+    font-size: 24px;
+    margin: 6px;
+    color:black
+}
+span{
+    color: green;
+    font-size: 35px;
+    font-weight: bold;
+}
