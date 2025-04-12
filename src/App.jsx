@@ -43,6 +43,8 @@ const images = [
       alt: "Image 8"
     }
   ];
+
+  const btns=[{id:1,text:1},{id:2,text:2},{id:3,text:3},{id:4,text:4}]
   
 const App=()=>{
     const [image,setImage]=useState(images[0].imageUrl)
@@ -55,12 +57,12 @@ const App=()=>{
             <img className="image" src={image} alt={alt} />
             <h1 className="nature-heading">Nature Photography</h1>
             <h2 className="nature-heading">Nature Photography By <span>Sanni</span></h2>
-            <div className="icons">
+            <ul className="icons">
                 {images.map(img=>(
-                    <img key={img.id} onClick={()=>handleImage(img.imageUrl)} style={{opacity:image===img.imageUrl?1:0.2}} className="icon" src={img.imageUrl} alt={alt} />
+                    <li key={img.id}><img  onClick={()=>handleImage(img.imageUrl)} style={{opacity:image===img.imageUrl?1:0.2}} className="icon" src={img.imageUrl} alt={alt} /></li>
                     
                 ))}
-            </div>
+            </ul>
         </div>
     )
 }
