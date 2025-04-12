@@ -57,9 +57,8 @@ const App=()=>{
             <h2 className="nature-heading">Nature Photography By <span>Sanni</span></h2>
             <div className="icons">
                 {images.map(img=>(
-                    <div key={img.id}>
-                        <img onClick={()=>handleImage(img.imageUrl)} style={{opacity:image===img.imageUrl?1:0.2}} className="icon" src={img.imageUrl} alt={alt} />
-                    </div>
+                    <img key={img.id} onClick={()=>handleImage(img.imageUrl)} style={{opacity:image===img.imageUrl?1:0.2}} className="icon" src={img.imageUrl} alt={alt} />
+                    
                 ))}
             </div>
         </div>
